@@ -11,7 +11,7 @@ public class Stats
 
 	public sbyte getMod(int stat)
 	{
-		if (stat <= 1)
+		/*if (stat <= 1)
 		{
 			return -5;
 		}
@@ -78,6 +78,7 @@ public class Stats
 		else
 		{
 			return 11;
-		}
+		}*/
+		return Convert.ToSByte((stat - stat % 2 - 10)/2);
 	}
 }
