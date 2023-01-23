@@ -5,10 +5,10 @@
         private sbyte baseVal;
         private sbyte racialVal;
         private sbyte ASI;
-        private String[] proficiencies;
-        private String[] expertise;
+        private List<string> proficiencies;
+        private List<string> expertise;
 
-        public CharacterStat(String name, String[] skills, sbyte baseVal, sbyte racialVal, sbyte ASI, string[] proficiencies, string[] expertise) : base(name, skills)
+        public CharacterStat(String name, List<string> skills, sbyte baseVal, sbyte racialVal, sbyte ASI, List<string> proficiencies, List<string> expertise) : base(name, skills)
         {
             this.baseVal = baseVal;
             this.racialVal = racialVal;
@@ -22,9 +22,19 @@
             return baseVal;
         }
 
+        public void SetBaseVal(sbyte baseVal)
+        {
+            this.baseVal  = baseVal;
+        }
+
         public sbyte GetRacialVal()
         {
             return racialVal;
+        }
+
+        public void SetRacialVal(sbyte racialVal) 
+        {
+            this.racialVal = racialVal;
         }
 
         public sbyte GetASI()
@@ -32,12 +42,31 @@
             return ASI;
         }
 
-        public String[] GetProficiencies()
+        public void IncrementASI()
+        {
+            this.ASI++;
+        }
+
+        public void DecrementASI()
+        {
+            this.ASI--;
+        }
+
+        public List<string> GetProficiencies()
         {
             return proficiencies;
         }
 
-        public String[] GetExpertise()
+        public bool AddProficiency(string newProficiency) {
+            int proficiencyIndex = this.GetSkills().BinarySearch(newProficiency);
+            if (proficiencyIndex < 0) 
+            {
+                return false;
+            }
+
+        }
+
+        public List<string> GetExpertise()
         {
             return expertise;
         }

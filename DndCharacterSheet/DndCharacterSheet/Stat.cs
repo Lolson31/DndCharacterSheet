@@ -3,9 +3,9 @@
     public class Stat
     {
         private string name;
-        private String[] skills;
+        private List<string> skills;
 
-        public Stat(string statName, string[] StatSkills)
+        public Stat(string statName, List<string> StatSkills)
         {
             this.name = statName;
             this.skills = StatSkills;
@@ -16,7 +16,7 @@
             return name;
         }
 
-        public string[] GetSkills()
+        public List<string> GetSkills()
         {
             return skills;
         }
@@ -26,9 +26,32 @@
             this.name = name;
         }
 
-        public void SetSkills(string[] skills)
+        public void SetSkills(List<string> skills)
         {
-            this.skills = skills;
+            this.skills = skills.Sort;
         }
+
+        public bool RemoveSkill(string skill) 
+        {
+            if (skills.IndexOf(skill) < 0) { 
+                return false; 
+            }
+            skills.Remove(skill);
+            return true;
+        }
+
+
+        public bool AddSkill(string skill)
+        {
+            if (skills.IndexOf(skill) < 0)
+            {
+                skills.Add(skill);
+                skills.Sort();
+                return true;
+            }
+            return false;
+        }
+
+
     }
 }
