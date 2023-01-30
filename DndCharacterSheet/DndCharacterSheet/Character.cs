@@ -6,7 +6,7 @@
 public class Character
 {
 	private sbyte levelTotal;
-	// TODO: Add race once the race class is created
+	private Race race;
 	private sbyte[] xp;
 	private sbyte[] hpRolls;
 	private short hp;
