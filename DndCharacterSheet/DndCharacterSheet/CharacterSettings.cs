@@ -15,28 +15,28 @@ namespace DndCharacterSheet
 
         public CharacterSettings()
         {
-            xpLeveling= xp;
-            rolledHP= rollHP;
-            useFeats= feats;
-            mcRequirements= multiclass;
+            xpLeveling= true;
+            rolledHP= true;
+            useFeats= true;
+            mcRequirements= true;
         }
 
-        public setXP(bool OnOff) 
+        public void setXP(bool OnOff) 
         { 
             xpLeveling= OnOff;
         }
 
-        public setRolledHP(bool OnOff) 
+        public void setRolledHP(bool OnOff) 
         { 
             rolledHP= OnOff;
         }
 
-        public setUseFeats(bool OnOff)
+        public void setUseFeats(bool OnOff)
         {
             useFeats = OnOff;
         }
 
-        public setMCRequirments(bool OnOff)
+        public void setMCRequirments(bool OnOff)
         {
             mcRequirements = OnOff;
         }

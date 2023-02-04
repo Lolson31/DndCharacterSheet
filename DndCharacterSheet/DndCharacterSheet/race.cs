@@ -9,9 +9,9 @@ public class Race
 	private string raceDescription;
 	private List<string> proficiencies;
 	private enum ASIs : sbyte {
-		Str = 0,
-		Dex = 0,
-		Con = 0,
+		Strength = 0,
+		Dexterity = 0,
+		Constitution = 0,
 		Int = 0,
 		Wis = 0,
 		Cha = 0
@@ -24,10 +24,14 @@ public class Race
 	private string creatureType;
 	// TODO: Implement feature once class is created
 
-	public Race()
+	public Race(string name, string desc, List<string> proficiencies, 
+				sbyte str, sbyte dex, sbyte con,
+				sbyte intelligence)
 	{
 		//
 		// TODO: Add constructor logic here
 		//
 	}
+
+	public void
 }

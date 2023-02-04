@@ -17,7 +17,7 @@ public class Feature
 		Cha = 0
 	}
 
-	public Feature()
+	public Feature(string desc, string name, sbyte level)
 	{
 		//
 		// TODO: Add constructor logic here

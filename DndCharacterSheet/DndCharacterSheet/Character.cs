@@ -1,10 +1,12 @@
-﻿using System;
+﻿using DndCharacterSheet;
+using System;
 
 /// <summary>
 /// Contains level, stats, xp, hp rolls, hp, speed, size, age, language, and class(es)
 /// </summary>
 public class Character
 {
+	//Level related
 	private sbyte levelTotal;
 	private Race race;
 	private sbyte[] xp;
@@ -15,9 +17,12 @@ public class Character
 	private short age;
 	private string[] languages;
 	private Dictionary<string, sbyte> classes;
+	// Character stats
 
-	public Character()
+	public Character(Race race, Stat str, Stat dex,)
 	{
+		this.race = race;
+		this.
 		// TODO: constructor
 	}
 }
