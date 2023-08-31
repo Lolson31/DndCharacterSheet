@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndCharacterSheet", "DndCharacterSheet\DndCharacterSheet.csproj", "{5BFF726F-55B7-4779-A72C-8A8B12FAFAB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingSuite", "TestingSuite\TestingSuite.csproj", "{D6FE6D9F-B130-4B66-8FBA-251D6A69F2B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{5BFF726F-55B7-4779-A72C-8A8B12FAFAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BFF726F-55B7-4779-A72C-8A8B12FAFAB2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5BFF726F-55B7-4779-A72C-8A8B12FAFAB2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D6FE6D9F-B130-4B66-8FBA-251D6A69F2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FE6D9F-B130-4B66-8FBA-251D6A69F2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FE6D9F-B130-4B66-8FBA-251D6A69F2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FE6D9F-B130-4B66-8FBA-251D6A69F2B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

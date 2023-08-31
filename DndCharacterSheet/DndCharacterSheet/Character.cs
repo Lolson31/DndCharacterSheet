@@ -1,4 +1,4 @@
-﻿using DndCharacterSheet;
+﻿using DndCharacterSheet.StatsClient.Stats.Contracts;
 using System;
 
 /// <summary>

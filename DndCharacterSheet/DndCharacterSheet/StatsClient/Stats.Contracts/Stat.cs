@@ -1,4 +1,4 @@
-﻿namespace DndCharacterSheet
+﻿namespace Stats.Contracts
 {
     public class Stat
     {
@@ -7,8 +7,8 @@
 
         public Stat(string statName, List<string> StatSkills)
         {
-            this.name = statName;
-            this.skills = StatSkills;
+            name = statName;
+            skills = StatSkills;
         }
 
         public string GetName()
@@ -31,10 +31,11 @@
             this.skills = skills.Sort;
         }
 
-        public bool RemoveSkill(string skill) 
+        public bool RemoveSkill(string skill)
         {
-            if (skills.IndexOf(skill) < 0) { 
-                return false; 
+            if (skills.IndexOf(skill) < 0)
+            {
+                return false;
             }
             skills.Remove(skill);
             return true;
